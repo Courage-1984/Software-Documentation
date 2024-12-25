@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.0/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <!-- Categories at the top, centered -->
+            <div class="category-filters-wrapper">
+                <div class="category-filters" id="category-filters">
+                    <!-- Categories will be dynamically added here -->
+                </div>
+            </div>
+
+            <!-- Navigation centered -->
+            <nav class="nav-container">
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-center-wrapper">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search software...">
+                    </div>
+
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="software">Software</button>
+                        <button class="tab-btn" data-tab="ricing">Ricing</button>
+                        <button class="tab-btn" data-tab="ai">AI Software</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="tab-content active" id="software">
+                <!-- Content will be loaded here -->
+            </div>
+            <div class="tab-content" id="ricing">
+                <!-- Content will be loaded here -->
+            </div>
+            <div class="tab-content" id="ai">
+                <!-- Content will be loaded here -->
+            </div>
+        </main>
+
+        <div id="back-to-top" role="button" tabindex="0">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
